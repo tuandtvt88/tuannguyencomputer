@@ -1,0 +1,150 @@
+.header {
+  display: flex;
+  height: 86px;
+  width: 100%;
+
+  .logo {
+    width: 126px;
+    height: 130px;
+    margin-left: 180px;
+    z-index: 1;
+
+    .image {
+      width: 124px;
+      height: 126px;
+      border-radius: 15px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border: 2px solid green;
+      }
+    }
+  }
+
+  .search {
+    width: 568px;
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .search-container {
+      display: flex;
+      width: 447px;
+      height: 36px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      overflow: hidden;
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        color: black;
+      }
+
+      button {
+        justify-content: center;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+
+    .search-container button:hover {
+      background-color: #45a049;
+    }
+  }
+
+  .hotline {
+    width: 314px;
+    height: 86px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .header {
+    display: flex;
+    height: 86px;
+    width: 100%;
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      width: 126px;
+      height: 130px;
+      // margin-left: 120px;
+      z-index: 1;
+
+      .image {
+        width: 124px;
+        height: 116px;
+        border-radius: 15px;
+      }
+    }
+    .search {
+      width: 68px;
+      height: 86px;
+      display: flex;
+      // justify-content: center;
+      // align-items: center;
+  
+      .search-container {
+        display: flex;
+        width: 247px;
+        height: 26px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        overflow: hidden;
+  
+        input {
+          width: 100%;
+          padding: 10px;
+          border: none;
+          outline: none;
+          font-size: 10px;
+          color: black;
+        }
+  
+        button {
+          justify-content: center;
+          align-items: center;
+          border: none;
+          cursor: pointer;
+  
+          img {
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+  
+      .search-container button:hover {
+        background-color: #45a049;
+      }
+    }
+  
+    .hotline {
+      width: 110px;
+      height: 66px;
+  
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

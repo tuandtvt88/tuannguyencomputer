@@ -1,0 +1,39 @@
+.evaluate {
+    justify-content: center;
+    width: 100%;
+    height: 260px;
+    background-color:#f4f4f4;
+    .danhgia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 130px;
+        width: 100%;
+        color:#00adef;
+        font-size: x-large;
+        padding-top: 40px;
+    }
+    .star-rating {
+        display: flex;
+        justify-content: center;
+        height: 163px;
+        width: 100%;
+        font-size: 0; /* Ngăn khoảng trắng xuất hiện giữa các hình sao */
+        input {
+            display: none; /* Ẩn hộp kiểm mặc định */
+          }
+          label {
+            display: inline-block;
+            font-size: 50px;
+            cursor: pointer;
+          }
+          label:before {
+            content: "\2605"; /* Ký tự sao Unicode */
+            color: #ccc; /* Màu của sao trống */
+          }
+          input:checked ~ label:before {
+            color: #f7d702; /* Màu của sao đầy đủ khi được chọn */
+          }
+    }
+  
+}
